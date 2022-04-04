@@ -76,7 +76,7 @@ main{
 }
 
 .profile-img{
-    max-width: 15rem;
+    max-width: 14rem;
     width: 65%;
 }
 
@@ -87,12 +87,12 @@ main{
 
 .linkedin-icon{
     font-size: 1.5rem;
-    color: var(--black-color);
+    color: #0e76a8;
 }
 
 .github-icon{
     font-size: 1.5rem;
-    color: var(--black-color);
+    color: #000;
 }
 
 .banner-info{
@@ -230,16 +230,15 @@ main{
 
 .projects-container{
     display: flex;
-    flex-flow: row wrap;
-    align-content: flex-start;
+    flex-flow: column wrap;
     justify-content: center;
     overflow: hidden;
-    gap: 1.25rem;
+    gap: 1rem;
     padding: 0.5rem 0.75rem;
 }
 
 .project-box{
-    margin: 0.5rem auto 0 auto;
+    max-width: 37.5rem;
 }
 
 .project-img{
@@ -247,16 +246,22 @@ main{
     justify-content: center;
     width: 100%;
     max-width: 25rem;
+    margin: 1rem auto;
 }
 
 .project-img img{
-    width: 80%;
+    width: 100%;
 }
 
 .project-name{
     text-align: center;
     color: var(--blue-color);
     font-size: 1.25rem;
+}
+
+.slide-btn{
+    display: flex;
+    justify-content: center
 }
 /* close projects */
 
@@ -334,7 +339,23 @@ form{
 .socialMedia-container{
     display: flex;
     flex-direction: row;
+    font-size: 2rem;
     gap: 4rem;
+}
+
+.bxl-twitter{
+    color: #00acee;
+}
+
+.bxl-instagram{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    border-radius: 25%;
+}
+
+.bxl-youtube{
+    color: #FF0000;
+    background-color: #FFF;
+    border-radius: 25%;
 }
 
 .copyright{
