@@ -76,7 +76,8 @@ main{
 }
 
 .profile-img{
-    width: 50%;
+    max-width: 15rem;
+    width: 65%;
 }
 
 .contact-icon{
@@ -228,26 +229,34 @@ main{
 }
 
 .projects-container{
-    display: grid;
-    grid-template-rows: auto auto;
-    gap: 1rem;
-    place-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    gap: 1.25rem;
     padding: 0.5rem 0.75rem;
-    margin: auto auto;
+}
+
+.project-box{
+    margin: 0.5rem auto 0 auto;
 }
 
 .project-img{
     display: flex;
     justify-content: center;
+    width: 100%;
+    max-width: 25rem;
 }
 
 .project-img img{
-    max-width: 80%;
+    width: 80%;
 }
 
 .project-name{
     text-align: center;
     color: var(--blue-color);
+    font-size: 1.25rem;
 }
 /* close projects */
 
@@ -265,7 +274,9 @@ main{
 }
 
 .contact-container{
+    max-width: 25rem;
     padding: 0.5rem 0.75rem;
+    margin: 0 auto;
 }
 
 #name{
@@ -293,6 +304,7 @@ main{
 }
 
 #submit{
+    margin: 0 auto;
     background-color: var(--blue-color);
     color: var(--white-color);
     padding: var(--btn-padding);
@@ -328,5 +340,5 @@ form{
 .copyright{
     font-size: 0.75rem;
 }
-
+/* close footer */
 
