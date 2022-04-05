@@ -13,158 +13,203 @@
         <div class="name">
             <h1>Nitipat Ruengsatawit</h1>
         </div>
-        <div class="toggleBtn">
-            <i class='bx bx-menu'></i>
+        <div class="toggleBtn-container">
+            <i class='bx bx-menu' onclick="DOM.showNavMenu()"></i>
+            <i class='bx bx-x hideBtn' onclick="DOM.showNavMenu()"></i>
+        </div>
+        <div class="menu">
+            <ul class="menu-container">
+                <li class="home-menu">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="about-menu">
+                    <a href="#about">About</a>
+                </li>
+                <li class="skills-menu">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li class="projects-menu">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="contact-menu">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <main>
-        <div class="banner">
-            <div class="banner-img">
-                <div class="img-container">
-                    <img src="/IMG/profile-img.png" alt="profile-img" class="profile-img">
-                    <div class="contact-icon">
-                        <div class="linkedin-icon">
-                            <i class='bx bxl-linkedin-square'></i>
-                        </div>
-                        <div class="github-icon">
-                            <i class='bx bxl-github' ></i>
+        <div class="banner" id="home">
+            <div class="page-container">
+                <div class="banner-img">
+                    <div class="img-container">
+                        <img src="/IMG/profile-img.png" alt="profile-img" class="profile-img">
+                        <div class="contact-icon">
+                            <div class="linkedin-icon">
+                                <i class='bx bxl-linkedin-square'></i>
+                            </div>
+                            <div class="github-icon">
+                                    <i class='bx bxl-github' ></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="banner-info">
-                <div class="info-container">
-                    <div class="text-container">
-                        <h1 class="greet">Hi,</h1>
-                        <h1 class="introduce">I am <span>Nitipat</span></h1>
-                        <h1 class="position">Developer</h1>
-                    </div>
-                    <div class="btn-container">
-                        <button class="resumeBtn">Resume</button>
-                        <button class="contactBtn">Contact</button>
+                <div class="banner-info">
+                    <div class="info-container">
+                        <div class="text-container">
+                            <h1 class="greet">Hi,</h1>
+                            <h1 class="introduce">I am <span>Nitipat</span></h1>
+                            <h1 class="position">Developer</h1>
+                        </div>
+                        <div class="btn-container">
+                            <button class="resumeBtn">Resume</button>
+                            <button class="contactBtn">Contact</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <article class="about">
-            <div class="about-header">
-                <h1>About</h1>
-            </div>
-            <div class="about-container">
-                <div class="passion">
-                    <span>My Passion</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo molestias iure, nihil, aperiam voluptatem ipsam repellat possimus adipisci soluta rerum neque reprehenderit repudiandae laboriosam quaerat aliquid, sit architecto error. Assumenda.</p>
+        <article class="about" id="about">
+            <div class="page-container">
+                <div class="about-header">
+                    <h1>About</h1>
                 </div>
-                <div class="background">
-                    <span>My background</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo molestias iure, nihil, aperiam voluptatem ipsam repellat possimus adipisci soluta rerum neque reprehenderit repudiandae laboriosam quaerat aliquid, sit architecto error. Assumenda.</p>
-                </div>
-            </div>
-        </article>
-        <article class="skills">
-            <div class="skills-header">
-                <h1>Skills</h1>
-            </div>
-            <div class="skills-container">
-                <div class="professional">
-                    <h1>Professional Skills</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur repellat placeat earum fugiat, dicta soluta.</p>
-                </div>
-                <div class="skills-icon-container">
-                    <div class="html-icon">
-                        <i class='bx bxl-html5'></i>
-                    </div>
-                    <div class="css-icon">
-                        <i class='bx bxl-css3'></i>
-                    </div>
-                    <div class="javascript-icon">
-                        <i class='bx bxl-javascript' ></i>
-                    </div>
-                    <div class="react-icon">
-                        <i class='bx bxl-react'></i>
-                    </div>
-                    <div class="nodeJs-icon">
-                        <i class='bx bxl-nodejs'></i>
-                    </div>
-                    <div class="python-icon">
-                        <i class='bx bxl-python'></i>
-                    </div>
+                <div class="about-container">
+                        <div class="passion">
+                            <span>My Passion</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo molestias iure, nihil, aperiam voluptatem ipsam repellat possimus adipisci soluta rerum neque reprehenderit repudiandae laboriosam quaerat aliquid, sit architecto error. Assumenda.</p>
+                        </div>
+                        <div class="background">
+                            <span>My background</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo molestias iure, nihil, aperiam voluptatem ipsam repellat possimus adipisci soluta rerum neque reprehenderit repudiandae laboriosam quaerat aliquid, sit architecto error. Assumenda.</p>
+                        </div>
                 </div>
             </div>
         </article>
-        <article class="projects">
-            <div class="projects-header">
-                <h1>My Projects</h1>
-            </div>
-            <div class="projects-container">
-                <div class="project-box">
-                    <div class="project-name">
-                        <h3>Project A</h3>
+        <article class="skills" id="skills">
+            <div class="page-container">
+                <div class="skills-header">
+                    <h1>Skills</h1>
+                </div>
+                <div class="skills-container">
+                    <div class="professional">
+                        <h1>Professional Skills</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur repellat placeat earum fugiat, dicta soluta.</p>
                     </div>
-                    <div class="project-img">
-                        <img src="/IMG/mockProjects-img.jpg" alt="" srcset="">
-                    </div>
-                    <div class="project-info">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, enim? Magni officiis facere ducimus enim?</p>
+                    <div class="skills-icon-container">
+                        <div class="html-icon">
+                            <i class='bx bxl-html5'></i>
+                        </div>
+                        <div class="css-icon">
+                            <i class='bx bxl-css3'></i>
+                        </div>
+                        <div class="javascript-icon">
+                            <i class='bx bxl-javascript' ></i>
+                        </div>
+                        <div class="react-icon">
+                            <i class='bx bxl-react'></i>
+                        </div>
+                        <div class="nodeJs-icon">
+                            <i class='bx bxl-nodejs'></i>
+                        </div>
+                        <div class="python-icon">
+                            <i class='bx bxl-python'></i>
+                        </div>
                     </div>
                 </div>
-                <div class="project-box">
-                    <div class="project-img">
-                        <img src="/IMG/mockProjects-img.jpg" alt="" srcset="">
-                    </div>
-                    <div class="project-name">
-                        <h3>Project B</h3>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <div class="project-img">
-                        <img src="/IMG/mockProjects-img.jpg" alt="" srcset="">
-                    </div>
-                    <div class="project-name">
-                        <h3>Project C</h3>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <div class="project-img">
-                        <img src="/IMG/mockProjects-img.jpg" alt="" srcset="">
-                    </div>
-                    <div class="project-name">
-                        <h3>Project D</h3>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <div class="project-img">
-                        <img src="/IMG/mockProjects-img.jpg" alt="" srcset="">
-                    </div>
-                    <div class="project-name">
-                        <h3>Project E</h3>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <div class="project-img">
-                        <img src="/IMG/mockProjects-img.jpg" alt="" srcset="">
-                    </div>
-                    <div class="project-name">
-                        <h3>Project F</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-btn">
-                <button>< Slide ></button>
             </div>
         </article>
-        <article class="contact">
-            <div class="contact-header">
-                <h1>Contact</h1>
+        <article class="projects" id="projects">
+            <div class="page-container">
+                <div class="projects-header">
+                    <h1>My Projects</h1>
+                </div>
+                <div class="projects-container">
+                    <div class="project-box">
+                        <div class="project-name">
+                            <h3>Project A</h3>
+                        </div>
+                        <div class="project-img">
+                            <img src="/IMG/mockProjects-img.jpg" alt="" srcset="">
+                        </div>
+                        <div class="project-info">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, enim? Magni officiis facere ducimus enim?</p>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <div class="project-name">
+                            <h3>Project B</h3>
+                        </div>
+                        <div class="project-img">
+                            <img src="/IMG/mockProjects-img.jpg" alt="" srcset="">
+                        </div>
+                        <div class="project-info">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, enim? Magni officiis facere ducimus enim?</p>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <div class="project-name">
+                            <h3>Project C</h3>
+                        </div>
+                        <div class="project-img">
+                            <img src="/IMG/mockProjects-img.jpg" alt="" srcset="">
+                        </div>
+                        <div class="project-info">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, enim? Magni officiis facere ducimus enim?</p>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <div class="project-name">
+                            <h3>Project D</h3>
+                        </div>
+                        <div class="project-img">
+                            <img src="/IMG/mockProjects-img.jpg" alt="" srcset="">
+                        </div>
+                        <div class="project-info">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, enim? Magni officiis facere ducimus enim?</p>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <div class="project-name">
+                            <h3>Project E</h3>
+                        </div>
+                        <div class="project-img">
+                            <img src="/IMG/mockProjects-img.jpg" alt="" srcset="">
+                        </div>
+                        <div class="project-info">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, enim? Magni officiis facere ducimus enim?</p>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <div class="project-name">
+                            <h3>Project F</h3>
+                        </div>
+                        <div class="project-img">
+                            <img src="/IMG/mockProjects-img.jpg" alt="" srcset="">
+                        </div>
+                        <div class="project-info">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, enim? Magni officiis facere ducimus enim?</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="slide-btn">
+                    <button>< Slide ></button>
+                </div>
             </div>
-            <div class="contact-container">
-                <form onsubmit="event.preventDefault()" id="contact-form">
-                    <input type="text" name="name" id="name" placeholder="name">
-                    <input type="email" name="email" id="email" placeholder="email">
-                    <textarea form="contact-form" name="message" id="message" placeholder="message" rows="6" cols="50"></textarea>
-                    <button type="submit" id="submit">Send</button>
-                </form> 
-            </div>  
+        </article>
+        <article class="contact" id="contact">
+            <div class="page-container">
+                <div class="contact-header">
+                    <h1>Contact</h1>
+                </div>
+                <div class="contact-container">
+                    <form onsubmit="event.preventDefault()" id="contact-form">
+                        <input type="text" name="name" id="name" placeholder="name">
+                        <input type="email" name="email" id="email" placeholder="email">
+                        <textarea form="contact-form" name="message" id="message" placeholder="message" rows="6" cols="50"></textarea>
+                        <button type="submit" id="submit">Send</button>
+                    </form> 
+                </div>
+            </div>
         </article>
     </main>
     <footer>
@@ -189,5 +234,6 @@
         </div>
     </footer>
 </body>
+<script src="/JS/dom.js"></script>
 <script src="/JS/main.js"></script>
 </html>

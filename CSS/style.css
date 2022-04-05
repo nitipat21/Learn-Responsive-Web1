@@ -19,9 +19,16 @@
     --btn-padding: 0.75rem 1rem;
 }
 
+.page-container{
+    height: 80vh;
+    margin: auto 0;
+}
+/* close default */
+
 nav{
     position: fixed;
     display: flex;
+    max-height: 2.5rem;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -35,9 +42,73 @@ nav{
     font-size: 0.5rem; 
 }
 
-.toggleBtn{
+.toggleBtn-container{
     display: flex;
-    font-size: 1.5rem;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.bx-x{
+    display: flex;
+    z-index: 100;
+}
+
+.bx-x:hover{
+    color: var(--lightblue-color);
+}
+
+.bx-x.hideBtn{
+    display: none;
+}
+
+.bx-menu.hideBtn{
+    display: none;
+    z-index: 0;
+}
+
+.menu{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--blue-color);
+}
+
+.menu-container{
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50vw;
+    max-width: 12rem;
+    height: 50vh;
+}
+
+.menu-container.showNavMenu{
+    display: flex;    
+}
+
+.menu li{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.menu li a:hover{
+    background-color: var(--lightblue-color);
+    color: var(--black-color);
 }
 /* close  nav */
 
@@ -51,7 +122,6 @@ main{
     flex-direction: column;
     height: 100vh;
     padding-top: 2.5rem;
-    gap: 1rem;
 }
 
 .banner-img{
@@ -98,6 +168,7 @@ main{
 .banner-info{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 50%;
 }
 
@@ -231,10 +302,10 @@ main{
 .projects-container{
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
     overflow: hidden;
     gap: 1rem;
     padding: 0.5rem 0.75rem;
+    max-height: 26.5rem;
 }
 
 .project-box{
@@ -261,7 +332,16 @@ main{
 
 .slide-btn{
     display: flex;
-    justify-content: center
+    justify-content: center;
+    margin: 0.75rem auto 1rem;
+}
+
+.slide-btn button{
+    padding: var(--btn-padding);
+    border-radius: var(--btn-border-radius);
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border-style: none;
 }
 /* close projects */
 
