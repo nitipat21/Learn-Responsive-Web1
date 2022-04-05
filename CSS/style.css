@@ -19,10 +19,6 @@
     --btn-padding: 0.75rem 1rem;
 }
 
-.page-container{
-    height: 80vh;
-    margin: auto 0;
-}
 /* close default */
 
 nav{
@@ -124,6 +120,11 @@ main{
     padding-top: 2.5rem;
 }
 
+.banner-page-container{
+    height: 80vh;
+    margin: auto 0;
+}
+
 .banner-img{
     display: flex;
     justify-content: center;
@@ -206,6 +207,10 @@ main{
     padding-top: 2.5rem;
 }
 
+.about-page-container{
+    height: 80vh;
+}
+
 .about-header{
     font-size: 1.5rem;
     text-align: center;
@@ -232,6 +237,11 @@ main{
     flex-direction: column;
     height: 100vh;
     padding-top: 2.5rem;
+}
+
+.skills-page-container{
+    height: 80vh;
+    margin: auto 0;
 }
 
 .skills-header{
@@ -293,6 +303,11 @@ main{
     padding-top: 2.5rem;
 }
 
+.project-page-container{
+    height: 80vh;
+    margin: auto 0;
+}
+
 .projects-header{
     font-size: 1.5rem;
     text-align: center;
@@ -350,6 +365,11 @@ main{
     flex-direction: column;
     height: 100vh;
     padding-top: 2.5rem;
+}
+
+.contact-page-container{
+    height: 80vh;
+    margin: auto 0;
 }
 
 .contact-header{
@@ -443,3 +463,328 @@ form{
 }
 /* close footer */
 
+@media only screen and (min-width:600px) and (max-width: 1440px) {
+
+    nav{
+        max-height: 3rem;
+    }
+
+    .name{
+        font-size: 1rem;
+    }
+
+    .menu{
+        font-size: 2rem;
+    }
+
+    .menu-container{
+        max-width: 100%;
+    }
+
+    .banner{
+        justify-content: center;
+        height: 37.5vh;
+        font-size: 1.5rem;
+        padding-top: 3rem;
+    }
+
+    .banner-page-container{
+        height: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .banner-img{
+        height: auto;
+    }
+
+    .banner-info{
+        height: auto;
+    }
+
+    .profile-img{
+        width: 100%;
+    }
+/* close banner */
+
+    .about{
+        height: 62.5vh;
+        padding-top: 3rem;
+    }
+
+    .about-page-container{
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .about-header{
+        font-size: 2rem;
+    }
+
+    .about-container{
+        font-size: 1.5rem;
+        max-height: 100%;
+    }
+
+    .about-container span{
+        font-size: 2rem;
+    }
+/* close about */
+
+    .skills{
+        height: 50vh;
+        padding-top: 3rem;
+    }
+
+    .skills-page-container{
+        height: auto;
+    }
+
+    .skills-header{
+        font-size: 2rem;
+    }
+
+    .professional{
+        font-size: 1.25rem;
+    }
+
+    .skills-icon-container{
+        font-size: 5rem;
+    }
+/* close skills */
+
+    .projects{
+        height: 50vh;
+        padding-top: 3rem;
+    }
+
+    .projects-header{
+        font-size: 2rem;
+    }
+
+    .project-name{
+        font-size: 2rem;
+    }
+
+    .project-box{
+        max-width: 100%;
+    }
+
+    .project-info{
+        font-size: 1.25rem;
+    }
+
+    .slide-btn button{
+        font-size: 1rem;
+    }
+/* close projects */
+
+    .contact{
+        height: 85vh;
+        margin-top: 10%;
+        padding-top: 3rem;
+    }
+    
+    .contact-page-container{
+        height: auto;
+    }
+
+    .contact-container{
+        max-width: 80%;
+    }
+
+    .contact-header{
+        font-size: 2rem;
+    }
+
+    #name{
+        font-size: 1.5rem;
+    }
+
+    #email{
+        font-size: 1.5rem;
+    }
+
+    #message{
+        font-size: 1.5rem;
+    }
+
+    #submit{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width:1440px) and (max-width: 2560px) {
+
+    nav{
+        max-height: 5rem;
+    }
+
+    .name{
+        font-size: 1rem;
+    }
+
+    .menu{
+        font-size: 2rem;
+        position: relative;
+        margin: 0;
+    }
+
+    .menu-container{
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        background-color: var(--darkblue-color);
+        width: 60vw;
+    }
+
+    .menu-container li{
+        width: fit-content;
+    }
+
+    .menu-container li a{
+        width: 100%;
+    }
+
+    .toggleBtn-container{
+        display: none;
+    }
+
+    .banner{
+        justify-content: center;
+        height: 37.5vh;
+        font-size: 1.5rem;
+        padding-top: 3rem;
+    }
+
+    .banner-page-container{
+        height: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .banner-img{
+        height: auto;
+    }
+
+    .banner-info{
+        height: auto;
+    }
+
+    .profile-img{
+        width: 100%;
+    }
+/* close banner */
+
+    .about{
+        height: 62.5vh;
+        padding-top: 3rem;
+    }
+
+    .about-page-container{
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .about-header{
+        font-size: 2rem;
+    }
+
+    .about-container{
+        font-size: 1.5rem;
+        max-height: 100%;
+    }
+
+    .about-container span{
+        font-size: 2rem;
+    }
+/* close about */
+
+    .skills{
+        height: 50vh;
+        padding-top: 3rem;
+    }
+
+    .skills-page-container{
+        height: auto;
+    }
+
+    .skills-header{
+        font-size: 2rem;
+    }
+
+    .professional{
+        font-size: 1.25rem;
+    }
+
+    .skills-icon-container{
+        font-size: 5rem;
+    }
+/* close skills */
+
+    .projects{
+        height: 50vh;
+        padding-top: 3rem;
+    }
+
+    .projects-header{
+        font-size: 2rem;
+    }
+
+    .project-name{
+        font-size: 2rem;
+    }
+
+    .project-box{
+        max-width: 100%;
+    }
+
+    .project-info{
+        font-size: 1.25rem;
+    }
+
+    .slide-btn button{
+        font-size: 1rem;
+    }
+/* close projects */
+
+    .contact{
+        height: 85vh;
+        margin-top: 10%;
+        padding-top: 3rem;
+    }
+    
+    .contact-page-container{
+        height: auto;
+    }
+
+    .contact-container{
+        max-width: 80%;
+    }
+
+    .contact-header{
+        font-size: 2rem;
+    }
+
+    #name{
+        font-size: 1.5rem;
+    }
+
+    #email{
+        font-size: 1.5rem;
+    }
+
+    #message{
+        font-size: 1.5rem;
+    }
+
+    #submit{
+        font-size: 1.5rem;
+    }
+
+}
